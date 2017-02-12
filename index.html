@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: 'boxedregular';
+        src: url('tipo_ppel_-_boxedregular-webfont.woff2') format('woff2'),
+             url('tipo_ppel_-_boxedregular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'boxedheavy';
+        src: url('tipo_ppel_-_boxedheavy-webfont.woff2') format('woff2'),
+             url('tipo_ppel_-_boxedheavy-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'boxedbook';
+        src: url('tipo_ppel_-_boxedbook-webfont.woff2') format('woff2'),
+             url('tipo_ppel_-_boxedbook-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: boxedregular;
+      }
+
+      #menu {
+        font-family: boxedheavy;
+        -webkit-font-smoothing: antialiased;
+        font-size: 20px;
+        line-height: 35px;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        z-index: 10;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        outline: none;
+      }
+      a:active, a:focus {
+        border-bottom: 2px solid black;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      div.home {
+        background: #BBBABF url('Front_Page_image_NYC.jpg') center top no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      .section {
+        background: #D2D2D2 url('Concrete_Source.jpg') -30%;
+        /*background-size: cover;*/
+      }
+    </style>
+  </head>
+  <body>
+
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#jobs">Jobs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div id="fullpage">
+      <div class="section home" data-anchor="home">
+        <div class="container">
+          Digitising construction
+        </div>
+      </div>
+
+      <div class="section" data-anchor="about">
+        <div class="container">
+          <h1>Digitising construction</h1>
+          <p>Whilst we design digitally we still construct manually, using the same technology as 100 years ago. Architects can design to a high precision, but once the construction process starts, it becomes completely manual. It’s this disconnect between digital design and physical construction that causes costly errors, inefficiencies and poor quality buildings that plague the industry.</p>
+          <p>Our mission at Scaled Robotics is to digitise construction through the introduction of mobile robots to the construction site. These teams of small robots are a physical presence on the site, working directly from the 3D model, bridging the gap between the digital world and physical job site.</p>
+          <p>Backed by our lead investor and industry partner Peri we are building mobile robots that digitise construction.</p>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="jobs">
+          <div class="slide">
+            <div class="container">
+              <h1>Jobs</h1>
+              <p>We are looking for passionate people to join our team transforming construction.</p>
+              <p>Currently, there are two open positions available.</p>
+              <ul>
+                <li><a href="#jobs/1">SLAM + State Estimation</a></li>
+                <li><a href="#jobs/2">3D SLAM</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="container">
+            <h2>Jobs / SLAM + State Estimation</h2>
+            <p>Working on state estimation and sensor fusion to complement SLAM implementation. Needs knowledge of:
+            <ul>
+              <li>ROS</li>
+              <li>SLAM</li>
+              <li>Gazebo</li>
+              <li>OpenCV</li>
+              <li>C++ & Python</li>
+              <li>Excellent programming skills</li>
+            </ul></p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="container">
+            <h2>Jobs / 3D SLAM</h2>
+            <p>Working on incorporating 3D SLAM and map building. Needs knowledge of;
+            <ul>
+              <li>Octomap</li>
+              <li>3D mapping</li>
+              <li>ROS</li>
+              <li>SLAM</li>
+              <li>Gazebo</li>
+              <li>OpenCV</li>
+              <li>C++ & Python</li>
+              <li>Excellent programming skills</li></ul>
+            </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="section" data-anchor="contact">
+        <div class="container">
+          <h1>Contact</h1>
+          <a href="mailto:info@scaledrobotics.com">info@scaledrobotics.com</a>
+        </div>
+      </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        // anchors:['home', 'about', 'jobs', 'contact']
+      });
+      var hash = (window.location.hash == "" ? '#home' : window.location.hash)
+      $("a[href='"+hash+"']").focus()
+    });
+  </script>
+  </body>
+</html>
+
+
