@@ -62,7 +62,7 @@ section#contact .container {
 }
 
 #logo {
-  max-width: 330px;
+  max-width: 280px;
 }
 
 .valign {
@@ -96,6 +96,10 @@ a.big-link {
   text-align: center;
   display: block;
   margin: 0 auto;
+}
+
+h1,h2,h3,h4 {
+  font-weight: normal;
 }
 
 h2 {
@@ -139,6 +143,7 @@ a.underline {
   overflow: hidden;
   margin-top: 0px;
   width: 100%;
+  padding: 0;
 }
 #menu a {
   color: #FFF;
@@ -148,7 +153,7 @@ a.underline {
 }*/
 #menu li {
   display: inline;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 li.active a {
   border-bottom: 2px solid white;
