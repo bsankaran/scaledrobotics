@@ -38,26 +38,26 @@ body {
   overflow: hidden;
 }
 
-section {
+.section {
   display: block;
   overflow: hidden;
   position: relative;
   /*min-height: 100vh;*/
 }
 
-section#home {
+.section#home {
   background: #BBBABF url('Front_Page_image_NYC.jpg') center no-repeat;
   background-size: cover;
   text-align: center;
   vertical-align: middle;
 }
-section#home, section#contact {
+.section#home, .section#contact {
   height: 100vh;
 }
-section#contact {
+.section#contact {
   margin-bottom: 40px;
 }
-section#contact .container {
+.section#contact .container {
   padding-top: 0px;
 }
 
