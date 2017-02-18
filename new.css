@@ -143,9 +143,9 @@ a.underline {
 #menu a {
   color: #FFF;
 }
-#menu a:hover {
+/*#menu a:hover {
   color: #333;
-}
+}*/
 #menu li {
   display: inline;
   margin-left: 5px;
