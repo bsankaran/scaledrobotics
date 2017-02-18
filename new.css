@@ -144,6 +144,7 @@ a.underline {
   margin-top: 0px;
   width: 100%;
   padding: 0;
+  text-align: center;
 }
 #menu a {
   color: #FFF;
@@ -153,7 +154,8 @@ a.underline {
 }*/
 #menu li {
   display: inline;
-  margin-left: 10px;
+  margin-left: 15px;
+  line-height: 42px;
 }
 li.active a {
   border-bottom: 2px solid white;
