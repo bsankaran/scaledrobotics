@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'boxedregular';
+  src: url('tipo_ppel_-_boxedregular-webfont.woff2') format('woff2'),
+       url('tipo_ppel_-_boxedregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boxedheavy';
+  src: url('tipo_ppel_-_boxedheavy-webfont.woff2') format('woff2'),
+       url('tipo_ppel_-_boxedheavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boxedbook';
+  src: url('tipo_ppel_-_boxedbook-webfont.woff2') format('woff2'),
+       url('tipo_ppel_-_boxedbook-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: boxedregular;
+}
+
+#menu {
+  font-family: boxedheavy;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  line-height: 35px;
+  position: fixed;
+  z-index: 10;
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0px;
+}
+#menu a {
+  color: #FFF;
+}
+#menu li {
+  display: inline;
+  margin-left: 5px;
+}
+li.active a {
+  border-bottom: 2px solid white;
+}
+a.big-link {
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 980px) {
+  #menu {
+    background: none;
+    left: 50px;
+    top: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+  #menu li {
+    display: block;
+  }
+  #menu a {
+    color: black;
+  }
+  li.active a {
+    border-bottom: 2px solid black;
+  }
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+h1 {
+  text-align: center;
+}
+/*a:active, a:focus {*/
+.container {
+  margin: 0 auto;
+  max-width: 745px;
+  padding: 50px 40px 90px;
+}
+div.home {
+  background: #BBBABF url('Front_Page_image_NYC.jpg') center top no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.section {
+  background: #D2D2D2 url('concrete.jpg') -30%;
+  /*background-size: cover;*/
+}
+.section .fp-controlArrow {
+}
+.section .fp-controlArrow.fp-prev {
+  left: 5px;
+  border-width: 28.5px 24px 28.5px 0;
+  border-color: transparent #000 transparent transparent;
+}
+.section .fp-controlArrow.fp-next {
+  right: 5px;
+  border-width: 28.5px 0 28.5px 24px;
+  border-color: transparent transparent transparent #000;
+}
+#logo {
+  max-width: 360px;
+  margin-top: -10%;
+}
+#peri-logo {
+  text-align: center;
+  margin: 90px auto 40px;
+  display: block;
+  clear: both;
+  max-width: 150px;
+}
+#peri-logo img {
+  width: 100%;
+}
+a.underline {
+  text-decoration: underline;
+}

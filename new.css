@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'boxedregular';
+  src: url('tipo_ppel_-_boxedregular-webfont.woff2') format('woff2'),
+       url('tipo_ppel_-_boxedregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boxedheavy';
+  src: url('tipo_ppel_-_boxedheavy-webfont.woff2') format('woff2'),
+       url('tipo_ppel_-_boxedheavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boxedbook';
+  src: url('tipo_ppel_-_boxedbook-webfont.woff2') format('woff2'),
+       url('tipo_ppel_-_boxedbook-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: boxedregular;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+#main {
+  background: #D2D2D2 url('concrete2.jpg') top center;
+  overflow: hidden;
+}
+
+section {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  /*min-height: 100vh;*/
+}
+
+section#home {
+  background: #BBBABF url('Front_Page_image_NYC.jpg') center no-repeat;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+}
+section#home, section#contact {
+  height: 100vh;
+}
+section#contact {
+  margin-bottom: 40px;
+}
+section#contact .container {
+  padding-top: 0px;
+}
+
+#logo {
+  max-width: 360px;
+}
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 745px;
+  padding: 20vh 40px 20px;
+  height: 100%;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  /*list-style: none;*/
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+
+a.big-link {
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.2em;
+  font-family: boxedheavy;
+}
+h4 {
+  font-size: 1.1em;
+}
+
+#peri-logo {
+  text-align: center;
+  margin: 90px auto 40px;
+  display: block;
+  clear: both;
+  max-width: 150px;
+}
+#peri-logo img {
+  width: 100%;
+}
+a.underline {
+  text-decoration: underline;
+}
+
+
+/*menu*/
+
+
+#menu {
+  font-family: boxedheavy;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  line-height: 35px;
+  position: fixed;
+  z-index: 10;
+  background: black;
+  overflow: hidden;
+  margin-top: 0px;
+  width: 100%;
+}
+#menu a {
+  color: #FFF;
+}
+#menu a:hover {
+  color: #333;
+}
+#menu li {
+  display: inline;
+  margin-left: 5px;
+}
+li.active a {
+  border-bottom: 2px solid white;
+}
+@media screen and (min-width: 980px) {
+  #menu {
+    border-top: 1px solid black;
+    max-width: 180px;
+    width: 13%;
+    text-align: center;
+    background: none;
+    left: 20px;
+    top: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0;
+    margin-left: 0;
+    font-size: 22px;
+  }
+  #menu li {
+    display: block;
+    margin: 0;
+    line-height: 45px;
+  }
+  #menu a {
+    color: black;
+  }
+  li.active a {
+    border-bottom: 1px solid black;
+  }
+}
