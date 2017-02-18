@@ -62,7 +62,7 @@ section#contact .container {
 }
 
 #logo {
-  max-width: 360px;
+  max-width: 330px;
 }
 
 .valign {
@@ -154,6 +154,9 @@ li.active a {
   border-bottom: 2px solid white;
 }
 @media screen and (min-width: 980px) {
+  #logo {
+    max-width: 360px;
+  }
   #menu {
     border-top: 1px solid black;
     max-width: 180px;
