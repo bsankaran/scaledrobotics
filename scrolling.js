@@ -44,3 +44,10 @@ $(window).scroll(function () {
          .end().filter("[href='#" + id + "']").parent().addClass('active')
   }
 })
+
+$('h3[data-tab]').click(function(e) {
+  e.preventDefault()
+  $("#" + $(this).data('tab')).toggle()
+})
+
+$('.tab').hide()

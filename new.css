@@ -190,3 +190,10 @@ li.active a {
     border-bottom: 1px solid black;
   }
 }
+
+h3 {
+  cursor: pointer;
+}
+h3:hover {
+  color: #333;
+}
