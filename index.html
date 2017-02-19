@@ -6,9 +6,6 @@
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.min.css" />
     <link rel="stylesheet" href="app.css">
     <script src="jquery.min.js"></script>
-    <script src="jquery-ui.min.js"></script>
-    <script type="text/javascript" src="scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
   </head>
   <body>
 
@@ -19,43 +16,34 @@
       <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
     </ul>
 
-    <div id="fullpage">
-      <div class="section home" data-anchor="home">
-        <div class="container">
-          <img src="scaledrobotics.svg" id="logo" />
-        </div>
-      </div>
+    <div class="section" id="home">
+      <img src="scaledrobotics.svg" id="logo" alt="Scaled Robotics" class="valign" style="margin-top: -35px" />
+    </div>
 
-      <div class="section" data-anchor="about">
+    <div id="main">
+      <div class="section" id="about">
         <div class="container">
-          <h1>Digitising construction</h1>
-          <p>The construction industry is still using the same tools as 100 years ago. Whilst we may design digitally we still construct manually and it's this disconnect that has led to an environmentally unfriendly, inefficient construction process that produces poor quality buildings. This is both economically and environmentally unsustainable.</p>
-          <p>At Scaled Robotics our mission is to digitize construction, introducing teams of mobile robots to the construction site that work directly from the 3D model, bridging the gap between digital design and physical construction. Applying recent advances in robotics to cut out costly errors, increase quality and transition to a leaner manufacturing process.</p>
-          <p>Backed by our principle investor Peri and other industry partners, we are building the robots to transform construction.</p>
+          <h2>Digitising construction</h2>
+          <p>Construction technology has not seen any noticeable improvement in over a 100 years. Though architects today are able to design digitally with high precision, we still construct manually using the same techniques that were used over a century ago. This disconnect between digital design and the physical world has led to an economically and environmentally unsustainable construction process, furthermore producing buildings that are energy inefficient.</p>
 
+          <p>At Scaled Robotics our mission is to digitise construction. Through the introduction of teams of mobile robots to the construction site that work directly from the 3D model, we bridge the gap between digital design and the physical construction site. Cutting out costly errors, increase quality and transition to a leaner manufacturing process.</p>
+          <p>Backed by our lead investor and industry partner Peri, we are modernising 21st century construction.</p>
 
           <p><a href="https://www.peri.com" target="_blank" id="peri-logo">Backed by<img src="Peri-logo.svg" /></a></p>
         </div>
       </div>
 
-      <div class="section" data-anchor="jobs">
-        <div class="slide">
-          <div class="container">
-            <h1>Jobs</h1>
-            <p>We are looking for passionate people to join our team, designing and testing robots for construction.</p>
-            <h2>SLAM Engineer</h2>
-            <h3>Overview</h3>
-            <p>Working as part of a team to implement SLAM for mobile robots on the construction site. Getting your hands dirty building the first robots for construction, pushing the boundaries of the industry.</p>
-<!--
-            <p><a href="#jobs/1" class="underline">Job Responsibilities</a></p>
-            <p><a href="#jobs/2" class="underline">Job Qualifications</a></p>
+      <div class="section" id="jobs">
+        <div class="container">
+          <h2>Jobs</h2>
+          <p>We are looking for passionate people to join our team, designing and testing robots for construction.</p>
 
-          </div>
-        </div>
-        <div class="slide">
-          <div class="container">
- -->
-            <h3>Responsibilities:</h3>
+          <h3 data-tab="slam">SLAM Engineer</h3>
+          <div id="slam" class="tab">
+            <h4>Overview</h4>
+            <p>Working as part of a team to implement SLAM for mobile robots on the construction site. Getting your hands dirty building the first robots for construction, pushing the boundaries of the industry.</p>
+
+            <h4>Responsibilities:</h4>
             <ul>
               <li>Implementing graph-based SLAM combining LIDAR and vision in challenging environments.</li>
               <li>Implementing map building for mobile platforms.</li>
@@ -65,16 +53,8 @@
               <li>Understanding effects of mechanical and electrical design on SLAM system.</li>
               <li>Take initiative and push the systematic evaluation of algorithms</li>
             </ul>
-<!--
-            <p><a href="#jobs/0" class="underline">Job Description</a></p>
-            <p><a href="#jobs/2" class="underline">Job Qualifications</a></p>
 
-          </div>
-        </div>
-        <div class="slide">
-          <div class="container">
- -->
-            <h3>Qualifications</h3>
+            <h4>Qualifications</h4>
             <ul>
               <li>Masters/PhD in Robotics or Computer Vision with experience in SLAM and 3D reconstruction; alternatively comparable industry career.</li>
               <li>At least 2-3 years experience developing algorithms for graph-based SLAM, pose estimation, visual odometry, probabilistic filtering and sensor fusion.</li>
@@ -88,36 +68,49 @@
               <li>Bonus: knowledge of GPU programming.</li>
               <li>Bonus: Open Source Software development and deployment.</li>
             </ul>
-<!--
-            <p><a href="#jobs/1" class="underline">Job Responsibilities</a></p>
-            <p><a href="#jobs/0" class="underline">Job Description</a></p>
--->
+          </div>
+
+          <h3 data-tab="robotics">Control Engineer</h3>
+          <div id="robotics" class="tab">
+            <h4>Overview</h4>
+            <p>Working as part of a team developing a base system capable of manipulation under uncertainty.</p>
+            <h4>Responsibilities</h4>
+            <ul>
+            <li>Implementing real time control software for 6.d.o.f arm</li>
+            <li>Implementing position and force control algorithms for robotic arms.</li>
+            <li>Implementing planning and control algorithms for closing perception action loops for compliant and stiff actuators</li>
+            <li>Take initiative and lead the systematic evaluation of algorithms</li>
+            </ul>
+            <h4>Qualifications</h4>
+            <ul>
+            <li>Masters/PhD in Robotics or Controls with experience in advanced control and planning techniques for high d.o.f systems ; alternatively comparable industry career.</li>
+            <li>At least 2-3 years experience developing algorithms for compliant control, manipulation, state estimation and system identification.</li>
+            <li>Experience working with different physics engines ODE, Bullet, MuJoCo HAPTIX </li>
+            <li>Experience working with different robotics hardware</li>
+            <li>Experienced Object Oriented Programmer in C++ and Python</li>
+            <li>Experience with commonly used packages ROS, Gazebo, MoveIt!</li>
+            <li>Experience with version control (specifically GIT)</li>
+            <li>Experience developing in Linux</li>
+            <li>Publications at top robotics conferences (RSS, ICRA, IROS, Humanoids)</li>
+            <li>Bonus: knowledge of development in Xenomai</li>
+            <li>Bonus: Open Source Software development and deployment</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section" id="contact">
+        <div class="container">
+          <div class="valign">
+            <h2>Contact</h2>
+            <!-- <p>If you have any questions, want to know about us. Want to work with us or just curious about construction robotics. Get in touch.</p> -->
+            <p><a class="big-link" href="mailto:info@scaledrobotics.com">info@scaledrobotics.com</a></p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="section" data-anchor="contact">
-        <div class="container">
-          <h1>Contact</h1>
-          <!-- <p>If you have any questions, want to know about us. Want to work with us or just curious about construction robotics. Get in touch.</p> -->
-          <p><a class="big-link" href="mailto:info@scaledrobotics.com">info@scaledrobotics.com</a></p>
-        </div>
-      </div>
-  </div>
-  <script>
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        menu: '#menu',
-        // css3: true,
-        // scrollingSpeed: 1000,
-        scrollOverflow: true
-        // anchors:['home', 'about', 'jobs', 'contact']
-      });
-      // var hash = (window.location.hash == "" ? '#home' : window.location.hash)
-      // $("a[href='"+hash+"']").focus()
-    });
-  </script>
+    <script src="scrolling.js"></script>
   </body>
 </html>
-
-

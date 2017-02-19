@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Scaled Robotics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.min.css" />
+    <link rel="stylesheet" href="app.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+  </head>
+  <body>
+
+    <ul id="menu">
+      <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+      <li data-menuanchor="about"><a href="#about">About</a></li>
+      <li data-menuanchor="jobs"><a href="#jobs">Jobs</a></li>
+      <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div id="fullpage">
+      <div class="section home" data-anchor="home">
+        <div class="container">
+          <img src="scaledrobotics.svg" id="logo" />
+        </div>
+      </div>
+
+      <div class="section" data-anchor="about">
+        <div class="container">
+          <h1>Digitising construction</h1>
+          <p>The construction industry is still using the same tools as 100 years ago. Whilst we may design digitally we still construct manually and it's this disconnect that has led to an environmentally unfriendly, inefficient construction process that produces poor quality buildings. This is both economically and environmentally unsustainable.</p>
+          <p>At Scaled Robotics our mission is to digitize construction, introducing teams of mobile robots to the construction site that work directly from the 3D model, bridging the gap between digital design and physical construction. Applying recent advances in robotics to cut out costly errors, increase quality and transition to a leaner manufacturing process.</p>
+          <p>Backed by our principle investor Peri and other industry partners, we are building the robots to transform construction.</p>
+
+
+          <p><a href="https://www.peri.com" target="_blank" id="peri-logo">Backed by<img src="Peri-logo.svg" /></a></p>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="jobs">
+        <div class="slide">
+          <div class="container">
+            <h1>Jobs</h1>
+            <p>We are looking for passionate people to join our team, designing and testing robots for construction.</p>
+            <h2>SLAM Engineer</h2>
+            <h3>Overview</h3>
+            <p>Working as part of a team to implement SLAM for mobile robots on the construction site. Getting your hands dirty building the first robots for construction, pushing the boundaries of the industry.</p>
+<!--
+            <p><a href="#jobs/1" class="underline">Job Responsibilities</a></p>
+            <p><a href="#jobs/2" class="underline">Job Qualifications</a></p>
+
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+ -->
+            <h3>Responsibilities:</h3>
+            <ul>
+              <li>Implementing graph-based SLAM combining LIDAR and vision in challenging environments.</li>
+              <li>Implementing map building for mobile platforms.</li>
+              <li>Working closely with a broad spectrum of people, including construction professionals to ensure a testable product is being developed.</li>
+              <li>Overseeing onsite evaluation and testing.</li>
+              <li>Integrating SLAM with larger robotics navigation software.</li>
+              <li>Understanding effects of mechanical and electrical design on SLAM system.</li>
+              <li>Take initiative and push the systematic evaluation of algorithms</li>
+            </ul>
+<!--
+            <p><a href="#jobs/0" class="underline">Job Description</a></p>
+            <p><a href="#jobs/2" class="underline">Job Qualifications</a></p>
+
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+ -->
+            <h3>Qualifications</h3>
+            <ul>
+              <li>Masters/PhD in Robotics or Computer Vision with experience in SLAM and 3D reconstruction; alternatively comparable industry career.</li>
+              <li>At least 2-3 years experience developing algorithms for graph-based SLAM, pose estimation, visual odometry, probabilistic filtering and sensor fusion.</li>
+              <li>Experience working with graph optimization backends for SLAM solutions (g2o, CERES).</li>
+              <li>Experience working with wide variety of sensors, including RGBD Cameras, stereo cameras, LIDAR and TOF cameras.</li>
+              <li>Experienced Object Oriented Programmer in C++ and Python.</li>
+              <li>Experience with commonly used packages PCL, ROS, Gazebo, OpenCV.</li>
+              <li>Experience with version control (specifically GIT).</li>
+              <li>Experience developing in Linux.</li>
+              <li>Publications at top robotics conferences (RSS, ICRA, IROS) or 3D Vision and CV conferences (3DV, CVPR, ICCV, ECCV) in related areas.</li>
+              <li>Bonus: knowledge of GPU programming.</li>
+              <li>Bonus: Open Source Software development and deployment.</li>
+            </ul>
+<!--
+            <p><a href="#jobs/1" class="underline">Job Responsibilities</a></p>
+            <p><a href="#jobs/0" class="underline">Job Description</a></p>
+-->
+          </div>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="contact">
+        <div class="container">
+          <h1>Contact</h1>
+          <!-- <p>If you have any questions, want to know about us. Want to work with us or just curious about construction robotics. Get in touch.</p> -->
+          <p><a class="big-link" href="mailto:info@scaledrobotics.com">info@scaledrobotics.com</a></p>
+        </div>
+      </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        menu: '#menu',
+        // css3: true,
+        // scrollingSpeed: 1000,
+        scrollOverflow: true
+        // anchors:['home', 'about', 'jobs', 'contact']
+      });
+      // var hash = (window.location.hash == "" ? '#home' : window.location.hash)
+      // $("a[href='"+hash+"']").focus()
+    });
+  </script>
+  </body>
+</html>
+
+
