@@ -160,9 +160,14 @@ a.underline {
 li.active a {
   border-bottom: 2px solid white;
 }
+@media screen and (min-width: 550px) {
+  #logo {
+    max-width: 400px;
+  }
+}
 @media screen and (min-width: 980px) {
   #logo {
-    max-width: 360px;
+    max-width: 530px;
   }
   #menu {
     border-top: 1px solid black;
